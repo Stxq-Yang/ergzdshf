@@ -1,6 +1,6 @@
-const QiExR_picture = "";
+const QiExR_picture = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAQAAABaKYYPAAAAYklEQVR42u3RAQ0AAAjDsPdP7FAF5+KltnCsd5I1A9RUyjHaV1HdS7HEioLbPDltWuIiwAAAAASUVORK5CYII=";
 
-const QiExR_icon = "";
+const QiExR_icon = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAeElEQVR42u3TAQkAAAjDsI/P9GgA6yEZpiqmyr4tK8gT5TMovVNUF0oG6Kl1THUtxBmKE2zTCFTEuAfDhE+rA4L9fXdRdR5aqWCzSMgAAAAASUVORK5CYII=";
 
 const QiExR_extensionId = "QiExR";
 
@@ -30,22 +30,11 @@ class QiExR {
             name: this.formatMessage("QiExR.name"), // 拓展名
             blockIconURI: witcat_fps_icon,
             menuIconURI: witcat_fps_icon,
-            color1: "#EC3838",
-            color2: "#B32B2B",
+            color1: "#000000",
+            color2: "#FFFFFF",
             blocks: [
-            ],
-            menus: {
-                type: [
-                    {
-                        text: this.formatMessage('QiExR.type.1'),
-                        value: 'true'
-                    },
-                    {
-                        text: this.formatMessage('QiExR.type.2'),
-                        value: 'false'
-                    },
-                ],
-            },
+
+            ]
         };
     }
 }
