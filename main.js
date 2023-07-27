@@ -8,16 +8,16 @@ class Qiergzdshf {
     constructor(runtime) {
         this.runtime = runtime;
     }
-    getInfo() {
+    getInfo(){
         return {
             id: Qiergzdshf_extensionId, // 拓展id
             name:({
       				id:'Qiergzdshf.categoryName',
       				default:'Qiergzdshf',
-      				description:"A testing Ext"
+      				description:'A testing Ext'
       			})
            block:[
-				      {
+                {
     					opcode:’fn’,
     					blockType: BlockType.COMMAND,
     					arguments:{
@@ -26,8 +26,8 @@ class Qiergzdshf {
                           defaultValue:''
                       }
                   }
-    				  }
-    			]
+                }
+        ]
       }
   }
 };
