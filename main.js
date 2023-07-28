@@ -23,42 +23,27 @@ class QiExR {
             description: id
         });
     }
-
+    
     getInfo() {
         return {
-            id: witcat_fps_extensionId, // 拓展id
+            id: QiExR_extensionId, // 拓展id
             name: this.formatMessage("QiExR.name"), // 拓展名
-            blockIconURI: witcat_fps_icon,
-            menuIconURI: witcat_fps_icon,
+            blockIconURI: QiExR_icon,
+            menuIconURI:QiExR_icon ,
             color1: "#000000",
             color2: "#FFFFFF",
             blocks: [
-
+                 {
+                  opcode: 'example-nop',
+                  blockType: Scratch.BlockType.COMMAND,
+                  blockAllThreads: false,
+                  text: 'do nothing',
+                  func: 'nop',
+                }
             ]
         };
     }
-}
-
-window.tempExt = {
-    Extension: QiExR,
-    info: {
-        name: "QiExR.name",
-        description: "QiExR.descp",
-        extensionId:  QiExR_extensionId,
-        iconURL:  QiExR_picture,
-        insetIconURL:  QiExR_icon,
-        featured: true,
-        disabled: false,
-        collaborator: "Qi & C4D"
-    },
-    l10n: {
-        "zh-cn": {
-            "QiExR.name": "[测试]Qi拓展R",
-            "QiExR.descp": "一个还在规划中的拓展"
-        },
-        en: {
-            "QiExR.name": "[test]QiExR",
-            "QiExR.descp": "A Extend which is planning"
-        }
-    }
+    function nop(){}
 };
+    
+Scratch.extensions.register(new ExampleExtension());
