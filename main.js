@@ -30,7 +30,7 @@ class QiExR {
             name: this.formatMessage("QiExR.name"), // 拓展名
             blockIconURI: QiExR_icon,
             menuIconURI:QiExR_icon ,
-            color1: "#000000",
+            color1: "#6666FF",
             color2: "#FFFFFF",
             blocks: [
                  {
